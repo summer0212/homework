@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int theSeries(int input);
+int isEven(int input);
 
 int main()
 {
@@ -23,7 +23,7 @@ return 0;
 }
 
 
-int theSeries(int input)
+int isEven(int input)
 {
         if(input%2==0)
         {
