@@ -15,10 +15,7 @@ int main()
         }
         else
         {
-            if(theSeries(i)==0)
-            {
-                printf("Odd number: %d \n",i);
-            }
+             printf("Odd number: %d \n",i);
         }
           
     }
@@ -28,10 +25,7 @@ return 0;
 
 int theSeries(int input)
 {
-    int i;
-    for(i=0;i<=input;i++)
-    {
-        if(i%2==0)
+        if(input%2==0)
         {
             return 1;
         }
@@ -39,5 +33,5 @@ int theSeries(int input)
         {
             return 0;
         }
-    }
+    
 }
