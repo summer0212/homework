@@ -1,6 +1,6 @@
 #include <stdio.h>
  int evenNo(int e);
- int oddNo(int o);
+
 
  int main()
  {
@@ -13,44 +13,26 @@
         {
             printf("Even number: %d \n", i);
         }
-        else if(oddNo(i)==1)
+        else
         {
-            printf("Odd number: %d", i);
+            printf("Odd number: %d \n", i);
         }
     }
 return 0;
 }
 
 
-
 int evenNo(int e)
 {
-    int i;
-    for(i=0;i<=e;i++)
-    {
-        if(i%2==0)
+    if(e%2==0)
         {
             return 1;
         }
-        else
+    else
         {
             return 0;
         }
-    }
+    
 }
  
- int oddNo(int odd)
- {
-    int i;
-    for(i=1;i<=odd;i++)
-    {
-        if(i%2!=0)
-        {
-            return 1;
-        }
-        else
-        {
-            return 0;
-        }
-    }
- }
+ 
