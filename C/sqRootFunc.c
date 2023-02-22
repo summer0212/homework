@@ -1,19 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
-float sqRoot(float input);
-
 int main()
 {
-  float n;
+  double n;
   printf("enter a number:\n");
   scanf("%f \n", &n);
-  sqRoot(n);
+  printf("the square root of number is:%f", sqrt(n));
   return 0;
-}
-
-float sqRoot(float input)
-{  
-    printf("the square root of number is:%f\n", sqrt(input));
-
 }
