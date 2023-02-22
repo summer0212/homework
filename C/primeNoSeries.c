@@ -1,23 +1,37 @@
 #include <stdio.h>
+
+int isPrime(int input);
+
+int isPrime(int input)
+{
+    int i,factor=0;
+    for(i=1;i<=input;i++)
+      {
+        if (input%i==0)
+        factor++;
+      }  
+      
+    if(factor==2)
+   return input;
+
+}    
+
+
 int main()
 {
-    int i,input,j,factor=0;
-    printf("enter the number\n");
-    scanf("%d", &input);
+int i,input,factor=0;
+printf("enter the number\n");
+scanf("%d", &input);
     for(i=1;i<=input;i++)
     {
-        for(j=2;j<=input;j++)
-        {
-            if(i%j==0)
-            {
-                factor++;
-                break;
-            }
-        }
-        if(factor==2 && i!=1)
-        {
-            printf("%d",i);
-        }
+        if(isPrime(input)%i==0 && isPrime(input)!=1) 
+        factor++;
     }
-    return 0;
+if(factor==2)
+    printf("prime no %d", input);
+else
+    printf("not prime %d", input);
+return 0;
 }
+
+
