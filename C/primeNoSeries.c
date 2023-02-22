@@ -14,9 +14,9 @@ int isPrime(int input)
     }  
       
     if(factor==2)
-      {
+    {
         return 1;
-      }
+    }
     return 0;
 }    
 
@@ -26,9 +26,9 @@ int main()
     int i,input,factor=0;
     printf("enter the number\n");
     scanf("%d", &input);
-    for(i=1;i<=input;i++)
+    for(i=2;i<=input;i++)
     {
-        if(isPrime(i)==1 && i!=1) 
+        if(isPrime(i)==1) 
         {
             printf("prime no %d\n", i);
         }
