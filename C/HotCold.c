@@ -1,8 +1,5 @@
 #include<stdio.h>
 
-void Hot();
-void Cold();
-
 int main()
 { 
     int t;
@@ -10,27 +7,12 @@ int main()
     scanf("%d", &t);
     if(t>=25)
         {
-           Hot();
+          printf("HOT\n");
             
         }
-    if(t<15)
+    else if(t<=15)
         {
-            Cold();
+          printf("COLD\n");
         }
     return 0;
-}
-
-
-void Hot()
-{
-     int temp;
-     if(temp>=25)
-     printf("HOT\n");
-}
-
-void Cold()
-{
-    int temp;
-    if(temp<15)
-    printf("COLD\n");
 }
