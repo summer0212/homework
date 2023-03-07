@@ -16,9 +16,6 @@ int main()
             s[i]=s[i]-32;
         }
     }
-    for(i=0;i<strlen(s);i++)
-    {
-        puts(s);
-    }
+    puts(s);
     return 0;
 }
